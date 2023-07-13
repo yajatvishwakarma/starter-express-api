@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+let fileUpload = require("express-fileupload")
 app.use(fileUpload({
     limits: { fileSize: 50 * 1024 * 1024 },
   }));
